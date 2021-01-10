@@ -1,4 +1,4 @@
-# Wgyt.cf Contributing guidelines
+# Wgyt Website Contributing guidelines
 ## rule 1
 follow code of conduct
 see code-of-conduct.md
