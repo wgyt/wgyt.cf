@@ -7,11 +7,13 @@
 	<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 	<meta name="generator" content="Hugo 0.79.0">
 	<title>Dashboard Template · Bootstrap v5.0</title>
+
 	<script>
+		ids = '{{id-list}}'
 		if ('{{userid}}'===''){
 				window.location.assign('https://auth.wgyt.tk/?url=wgyt.cf/dash')
 			}
-		if ('{{userid}}'!=='3956341'){
+		if (ids.includes('{{userid}}')){
 				window.location.assign('https://auth.wgyt.tk/?url=wgyt.cf/dash')
 			}
 	</script>
