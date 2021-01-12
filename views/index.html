@@ -214,10 +214,11 @@
 	</style>
 
 	<script>
+		ids = '{{id-list}}'
 		if ('{{userid}}'===''){
 				window.location.assign('https://auth.wgyt.tk/?url=wgyt.cf/dash')
 			}
-		if ('{{userid}}'!=='3956341'){
+		if (ids.includes('{{userid}}')){
 				window.location.assign('https://auth.wgyt.tk/?url=wgyt.cf/dash')
 			}
 	</script>
