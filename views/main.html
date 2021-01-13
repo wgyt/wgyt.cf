@@ -2,6 +2,7 @@
 
 <head>
 	<meta charset="utf-8">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="">
 	<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
@@ -9,15 +10,14 @@
 	<title>Dashboard Template · Bootstrap v5.0</title>
 
 	<script>
-		ids = '{{idlist}}'
+		ids = {{idlist}}
 		if ('{{userid}}'===''){
 				window.location.assign('https://auth.wgyt.tk/?url=wgyt.cf/dash')
 			}
-		if (ids.includes('{{userid}}')){
+		if (ids.includes('{{userid}}'===false)){
 				window.location.assign('https://auth.wgyt.tk/?url=wgyt.cf/dash')
 			}
 	</script>
-
 	<!-- Bootstrap core CSS -->
 	<link href="//getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
 	 crossorigin="anonymous">
