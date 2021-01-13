@@ -39,6 +39,7 @@ app.get('/dash/', (req, res) => {
 	res.render('index', {
     userid: req.cookies.id,
     username: req.cookies.name,
+	idlist: process.env.ids,
     userroles: req.cookies.roles
   });
 });
@@ -47,6 +48,7 @@ app.get('/dash/auth/callback/', (req, res) => {
 	res.render('auth', {
     userid: req.query.id,
     username: req.query.name,
+	idlist: process.env.ids,
     userroles: req.query.roles
   });
 });
@@ -58,6 +60,7 @@ app.get('/dash/main/', (req, res) => {
 	res.render('main', {
     userid: req.cookies.id,
     username: req.cookies.name,
+	idlist: process.env.ids,
     userroles: req.cookies.roles
   });
 });
@@ -67,6 +70,7 @@ app.get('/dash/new/', (req, res) => {
     userid: req.cookies.id,
     username: req.cookies.name,
     userroles: req.cookies.roles,
+	idlist: process.env.ids,
 		urlid: req.query.urlid,
 		type: "New"
   });
@@ -82,6 +86,7 @@ app.get('/dash/edit/', (req, res) => {
     userid: req.cookies.id,
     username: req.cookies.name,
     userroles: req.cookies.roles,
+			idlist: process.env.ids,
 		urlid: req.query.urlid,
 		type: "Edit"
   });
@@ -92,6 +97,7 @@ app.get('/dash/delete/', (req, res) => {
     userid: req.cookies.id,
     username: req.cookies.name,
     userroles: req.cookies.roles,
+	idlist: process.env.ids,
 		urlid: req.query.urlid
   });
 });
