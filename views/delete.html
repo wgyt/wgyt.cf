@@ -8,12 +8,13 @@
 	<meta name="generator" content="Hugo 0.79.0">
 	<title>Dashboard Template · Bootstrap v5.0</title>
 
+
 	<script>
 		ids = {{idlist}}
 		if ('{{userid}}'===''){
 				window.location.assign('https://auth.wgyt.tk/?url=wgyt.cf/dash')
 			}
-		if (ids.includes('{{userid}}')){
+		if (ids.includes('{{userid}}'===false)){
 				window.location.assign('https://auth.wgyt.tk/?url=wgyt.cf/dash')
 			}
 	</script>
